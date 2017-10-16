@@ -16,13 +16,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
-
+    let diceArray = ["Dice1", "Dice2", "Dice3", "Dice4", "Dice5", "Dice6"]
     @IBAction func rollButton(_ sender: UIButton) {
-        randomDiceIndex1 = Int (arc4random_uniform(6));
-        randomDiceIndex2 = Int (arc4random_uniform(6));
-        diceImageView1.image = UIImage(named: "Dice\(randomDiceIndex1 + 1)");
-        diceImageView2.image = UIImage(named: "Dice\(randomDiceIndex2 + 1)");
-        print("Dice 1 = \(randomDiceIndex1 + 1), Dice 2 = \(randomDiceIndex2 + 1)");
+        randomDiceIndex1 = Int (arc4random_uniform(UInt32(diceArray.count)));
+        randomDiceIndex2 = Int (arc4random_uniform(UInt32(diceArray.count)));
+        //diceImageView1.image = UIImage(named: "Dice\(randomDiceIndex1 + 1)");
+        //diceImageView2.image = UIImage(named: "Dice\(randomDiceIndex2 + 1)");
+        diceImageView1.image = UIImage(named: diceArray[randomDiceIndex1])
+        diceImageView2.image = UIImage(named: diceArray[randomDiceIndex2])
+        //print("Dice 1 = \(randomDiceIndex1 + 1), Dice 2 = \(randomDiceIndex2 + 1)");
 
     }
 
