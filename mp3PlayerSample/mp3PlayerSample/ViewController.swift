@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     let url = Bundle.main.url(forResource: "ring/hello", withExtension: "mp3")
 
     @IBAction func buttonPlay(_ sender: UIButton) {
-        print("press play")
+        print("press play tag = " + String(sender.tag))
         do {
 
                 self.audioPlayer = try AVAudioPlayer(contentsOf: self.url!)

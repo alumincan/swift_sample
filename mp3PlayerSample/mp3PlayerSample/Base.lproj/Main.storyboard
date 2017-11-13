@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwd-vs-0Jv">
-                                <rect key="frame" x="63" y="274" width="30" height="30"/>
+                                <rect key="frame" x="84" y="274" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
@@ -32,6 +32,14 @@
                                 <state key="normal" title="Pause"/>
                                 <connections>
                                     <action selector="buttonPuase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0FG-j7-jw1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xah-Ty-04w">
+                                <rect key="frame" x="84" y="337" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="buttonPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ljf-cb-l7s"/>
                                 </connections>
                             </button>
                         </subviews>
